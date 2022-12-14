@@ -18,7 +18,7 @@
                 {{ item.title }}
             </a>
             {% else %}
-            <a href="{{ item.path }}" class="list-group-item list-group-item-action bg-light sidebar-item">
+            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action bg-light sidebar-item">
                 {% if item.icon %}
                 <i class="{{ item.icon }}"></i>
                 {% endif %}
@@ -31,7 +31,7 @@
         <div class="sidebar-heading">Labs</div>
         <div class="list-group list-group-flush">
             {% for item in site.labs %}
-            <a href="{{ item.path }}" class="list-group-item list-group-item-action bg-light sidebar-item">
+            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action bg-light sidebar-item">
                 <span class="badge badge-pill badge-dark-grey">{{ item.number }}</span>
                 {{ item.title }}
             </a>
@@ -41,7 +41,7 @@
         <div class="sidebar-heading">Homeworks</div>
         <div class="list-group list-group-flush">
             {% for item in site.homeworks %}
-            <a href="{{ item.path }}" class="list-group-item list-group-item-action bg-light sidebar-item">
+            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action bg-light sidebar-item">
                 {% if item.icon %}
                 <img src="{% link icon/{{ item.icon }} %}" alt="triangle with all three sides equal" height="20"
                     width="20" />
