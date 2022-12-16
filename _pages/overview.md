@@ -2,5 +2,5 @@
 layout: page
 toc: true
 title: Overview
-icon: fas fa-chalkboard-teacher
+icon: fa-duotone fa-chalkboard-teacher
 ---
