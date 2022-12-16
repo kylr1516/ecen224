@@ -54,10 +54,10 @@ collections:
     output: true
     permalink: /:collection/:title/
     sort_by: number
-  homeworks:
+  homework:
     output: true
     permalink: /:collection/:name/
-    sort_by: chapter
+    sort_by: number
   pages:
     output: true
     permalink: /:name/
