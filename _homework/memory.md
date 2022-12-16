@@ -1,7 +1,7 @@
 ---
 layout: homework
 title: Memory
-icon:
+icon: fa-duotone fa-memory
 number: 4
 problems:
 layout: under-construction

@@ -1,7 +1,7 @@
 ---
 layout: homework
 title: Assembly
-icon:
+icon: fa-duotone fa-microchip
 number: 3
 problems:
 layout: under-construction
