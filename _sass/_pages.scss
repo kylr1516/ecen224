@@ -199,10 +199,20 @@ table {
     width: 90px;
     height: 90px;
 
-    --fa-primary-opacity: .2;
-    --fa-secondary-opacity: .5;
-    --fa-primary-color: #52439B;
-    --fa-secondary-color: #60B3BE;
+    --fa-primary-opacity: 1;
+    --fa-secondary-opacity: 1;
+    --fa-primary-color: #60b3be6c;
+    --fa-secondary-color: #52439b2b;
+
+    .fa-secondary {
+        stroke: black;
+        stroke-width: 5;
+    }
+
+    .fa-primary {
+        stroke: black;
+        stroke-width: 5;
+    }
 }
 
 .cloud-icon {
