@@ -25,14 +25,17 @@ In order to make use of the Pi Z2W, we will need to put an operating system onto
 
 In this lab we will become familiar with a distinct version of Linux called [Raspberry Pi OS](https://www.raspberrypi.com/software/) (formerly known as Raspbian) which was made specifically for devices like the Pi Z2W. In order to load Raspberry Pi OS to the SD card we will use the [Raspberry Pi Imager](https://www.raspberrypi.com/news/raspberry-pi-imager-imaging-utility/) tool. This should be accesible through the **Applications Menu** on your lab machine.
 
-![imager-start]({% link assets/getting-started/imager-start.png %}){:width="70%"}
-
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/imager-start.png %}" alt="imager-start">
+</figure>
 
 First we will select the **CHOOSE OS** option. Then click on **Raspberry Pi OS (other) > Raspberry Pi OS Lite (64-bit)**. This is the OS that will be written to the SD card. Note that the **Lite** option means that there will be no point-and-click navigation with the OS like you would be used to in Windows and macOS. Instead we will use the **command line** to get around.
 
 Next we will configure some of the OS settings by clicking on the ![gear]({% link assets/getting-started/config-gear.png %}){:width="6%"} icon. This brings you to the **Advanced Options** menu:
 
-![advanced-options]({% link assets/getting-started/advanced-options.png %}){:width="70%"}
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/advanced-options.png %}" alt="advanced-options">
+</figure>
 
 Change the following values in the menu according to the table below:
 
@@ -49,7 +52,9 @@ Change the following values in the menu according to the table below:
 
 Now that we have correctly configured the OS settings, we will write the OS to the SD card that came with your Pi Z2W kit. Make sure that your SD card is plugged into the USB adapter and that the adapter is plugged into the lab computer. Select **CHOOSE STORAGE** on the imager. A window that allows you to select the SD card will pop up:
 
-![sel-dev]({% link assets/getting-started/select-device.png %}){:width="70%"}
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/select-device.png %}" alt="select-device">
+</figure>
 
 Select the SD card and click **WRITE** to start writing the OS to the SD card. A pop-up window will ask you if you want to erase all contents on the SD card before continuing, select **YES** and continue with the write process. The writing process will take a while. 
 
@@ -89,14 +94,19 @@ ssh <your_username>@doorbell-<your_netid>.local
 ```
 A prompt will appear asking if you want to add the Pi Z2W to a list of trusted remote computers. Type in `yes` to add the Pi Z2W to the trusted list. After entering in your login credentials, you should receive a prompt like the following to show that you are inside of the Pi Z2W:
 
-![ssh]({% link assets/getting-started/ssh.png %}){:width="70%"}
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/ssh.png %}" alt="ssh">
+</figure>
 
 With a remote connection to the Pi Z2W, we can now finish our development environment setup. First let's give the Pi Z2W some more available RAM by increasing the size of its [swap file](https://itsfoss.com/create-swap-file-linux/). Doing this will give the Pi Z2W more system resources if it ever uses up all of its onboard RAM. First we can check to see how much RAM the Pi Z2W has available by typing in
 ```bash
 htop
 ```
 A window like the following should take control of the terminal
-![htop]({% link assets/getting-started/htop.png %}){:width="70%"}
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/htop.png %}" alt="htop">
+</figure>
 
 Note that there are several meters at the top of the screen with `Mem` and `Swp` being the bottom two. `Mem` indicates how much RAM is being used up on the Pi Z2W. Notice that at the right of the meter there is a ratio out of `419M`. This means that the Pi Z2W has ~500MB (or half a gigabyte) of RAM. The `Swp` field indicates how much storage space is set aside to act as an emergency backup incase all the the RAM is used. This swap memory is significantly slower than the onboard RAM and should not be thought of as interchangable with RAM. However looking at the figure we notice that we only have 100MB dedicated to this file. For our purposes we want 1024MB (or 1GB). 
 
@@ -133,23 +143,36 @@ sudo reboot
 You will notice that your `ssh` program will close and that your Pi Z2W reboots. Wait for a minute or two and then log back into the Pi Z2W with `ssh`.
 
 Check the system memory configuration again with `htop`. You should notice a change in the `Swp` field as reflected below:
-![htop2]({% link assets/getting-started/htop2.png %}){:width="70%"}
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/htop2.png %}" alt="htop2">
+</figure>
 
 ### Connect with VSCode
 The last we'll do in this lab to setup the Pi Z2W is to ensure that we can connect to it using the **Remote - SSH** extension in VSCode. Open VSCode through the **Applications Menu** on your lab machine. Look at the bottom status bar of the window. There should be an icon at the bottom-lefthand side of the screen:
 
-![remotessh]({% link assets/getting-started/vscode-icon.png %}){:width="70%"}
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/vscode-icon.png %}" alt="vscode-icon">
+</figure>
 
 Click on this icon then select **Connect to Host > Add New SSH Host**. In this input box we will put the `ssh` command we used before to connect to the Pi Z2W through the terminal: `ssh <your_username>@doorbell-<your_netid>.local`. 
-![vs-ssh]({% link assets/getting-started/vs-ssh.png %}){:width="70%"}
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/vs-ssh.png %}" alt="vs-ssh">
+</figure>
 
 Then we save this entry to our local `ssh` configuration file on our lab machine:
-![ssh-conf]({% link assets/getting-started/ssh-conf.png %}){:width="70%"}
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/ssh-conf.png %}" alt="ssh-conf">
+</figure>
 
 Once this is done you can click on the Remote SSH icon in the bottom-lefthand corner again and this time select the new `ssh` entry you just made by clicking **Connect to Host > doorbell-\<your\_netid\>.local**. 
 
 A new window will pop up and prompt you to enter in your Pi Z2W password. Once you enter in your password you can now browse through files and code on your Pi Z2W from VSCode on your lab machine. In the lefthand pane of the window you will be prompted to open a folder for development. Click on the **Open Folder** button and then click **OK** on the pop-up. This should put you into your home folder on Raspberry Pi OS.
-![open-folder]({% link assets/getting-started/open-folder.png %}){:width="70%"}
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/open-folder.png %}" alt="open-folder">
+</figure>
 
 ### Create SSH key for GitHub
 All of the labs require you to write code and upload it to a version control service called GitHub. A GitHub account is required for this class. If you do not have an account you can create one [here](http://github.com/join) otherwise you are allowed to use your personal account for this class. 
@@ -173,7 +196,10 @@ cat ~/.ssh/id_ed25519.pub
 Copy the output of this file by selecting it and pressing `Ctrl-Shift-C`. Then navigate in a web browser to your GitHub [keys console](https://github.com/settings/keys) (you must be signed into GitHub for this step to work).
 
 At the top of the page will be a big green button that says **New SSH key**. Click on this and then you should be taken to page like the one below:
-![github-ssh-key]({% link assets/getting-started/github-ssh-key.png %}){:width="70%"}
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/github-ssh-key.png %}" alt="github-ssh-key">
+</figure>
 
 Paste the contents that we copied into the **Key** box and feel free to add whatever value you desire into the **Title**. Make sure the dropdown menu for **Key type** is set to `Authentication Key`. Finally, click **Add SSH key** and now your Pi Z2W should be able to talk to your GitHub account.
 
@@ -189,7 +215,10 @@ Once `git` has installed, we use this to download the first the repository (or c
 Click on the **GitHub Classroom Link** located at the top of the `#lab-1` channel in Slack. You will be taken to a page that asks you to accept the assignment. Accept it and then you will be transferred to a page with a link of your repository for this assignment. Click on that link and you should be brought to the default view of the repository.
 
 Click on the green button that says **Code**. Make sure you are on the **SSH** tab as shown below and copy the text in the box beneath.
-![ssh-repo]({% link assets/getting-started/ssh-repo.png %}){:width="70%"}
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/ssh-repo.png %}" alt="ssh-repo">
+</figure>
 
 Back on the Pi Z2W's terminal type in
 ```bash
@@ -197,7 +226,10 @@ git clone <GitHub Repo SSH URL>
 ```
 
 This downloads a copy of the lab files from to your Pi Z2W. Since this lab is focused on setting up the Pi Z2W, there are no special files that you will need to interact with other than the `README.md` for your lab submission. 
-![dl-repo]({% link assets/getting-started/dl-repo.png %}){:width="70%"}
+
+<figure class="image mx-auto" style="max-width: 750px">
+  <img src="{% link assets/getting-started/dl-repo.png %}" alt="dl-repo">
+</figure>
 
 In future labs, any starter code or special resources for completing that lab will be included alongside that lab's `README.md`.
 
@@ -216,5 +248,3 @@ In future labs, any starter code or special resources for completing that lab wi
 Answer the questions in the `README.md`. 
 
 ## Resources
-
-
