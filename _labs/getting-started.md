@@ -45,7 +45,7 @@ Change the following values in the menu according to the table below:
 | Enable SSH:   | Select **Use password authentication** | This allows you to login into your Pi Z2W from anywhere on the network with the `ssh` tool by using a username and password. |
 | Set username and password: | Any username and password you desire (make sure it is secure). | We change these values from the default so that you can protect your projects. You are responsible for remembering this username and password! **Any loss of these credentials may require you to re-setup your Pi Z2W.** |
 | Set locate settings: | Timezone: **America/Denver**<br/>Keyboard Layout: **us** | This makes sure that the region the Pi Z2W is in the MDT timezone with the US keyboard layout. | 
-| Configure Wireless Lan* | SSID: **name of WiFi network at home**<br/>Password:**password of network** | In case you want to work with the Pi Z2W outside of the Digital Lab. |
+| Configure Wireless LAN* | SSID: **name of WiFi network at home**<br/>Password:**password of network** | In case you want to work with the Pi Z2W outside of the Digital Lab. |
 
 <p style="text-align: right; font-size: 10pt;">*optional configurations</p>
 
@@ -124,7 +124,7 @@ You will now notice that instead of being in command execution mode, your termin
 ```
 CONF_SWAPSIZE=100
 ```
-and change the `200` to `1024`. 
+and change the `100` to `1024`. 
 
 To save the changes and exit, press `Ctrl+X`. A prompt will ask if you want to save the changes to the file; press `Y` to accept the changes and then hit `Enter`. We now apply the changes made to the swap configuration file by
 ```bash
