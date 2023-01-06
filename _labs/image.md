@@ -1,6 +1,6 @@
 ---
 title: Image
-number: 6
+number: 4
 layout: under-construction
 ---
 
