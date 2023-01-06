@@ -9,13 +9,19 @@ icon: fa-duotone fa-chalkboard-teacher
 
 ## Course Makeup
 
-This course is made up of three major components:
+This course is made up of six major components that all work together to help make you an expert in computer systems.
 
-- **Labs**. Labs are due every week on Thursdays. Labs are turned in through Github. For every lab, there is also a feedback component. This feedback gives you a chance to tell me what you liked and did not like about the lab so that I can improve the labs for future years. 
+- **Lectures**. Lectures are one of the most important ways to learn the material. Please come to lecture. Reading the book, though it is important, is not a substitute. While in lecture, take notes. It will help you stay engaged in the lecture, help you remember the content better, and you have a great study resource for the tests.
 
-- **Homeworks**. Homeworks are due one week after the unit's material is covered. They will cover information from the lecture and book. They will typically consist of problems from the textbook.
+- **Homework**. Homeworks are due one week after the unit's material is covered. They will cover information from the lecture and book. The homework will help apply the ideas you have learned from lecture and book and prepare yourself for the exams.
 
-- **Exams**. There are two midterms and a comprehensive final.
+- **Programming Assignments**. Some of the topics we learn about in this class require extra practice to truly become a master. This masterly will be accomplished through programming assignments. You will have two programming assignments where you will do a deep dive on one or two of the concepts you learned in class.
+
+- **Exams**. There are two midterms and a comprehensive final. No one likes exams, but they are essential to gage how well you have mastered the content and prove to yourself that you are an expert at computer systems.
+
+- **Labs**. Labs are due every week on Thursdays. Labs are turned in through Github. For every lab, there is also a feedback component. This feedback gives you a chance to tell me what you liked and did not like about the lab so that I can improve the labs for future years. The purpose of the labs is to learn how to build something complex and apply what you have learned in lecture. Throughout the semester you will be building a smart doorbell system. This project will give you the confidence you need to build interesting projects in the future.
+
+- **Recitations**. Recitations are a chance for you to meet together as students with a TA and go over the content from the class. Initially, recitation will be focused on skills you will need to be a successful electrical and computer engineer, such as command line tools and debugging code. As the semester progresses, the recitations will shift to focus more on course content and help with labs and programming assignments. While recitations are optional, we highly recommend it.
 
 ## Goals
 
