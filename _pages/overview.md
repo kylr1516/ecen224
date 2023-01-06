@@ -23,12 +23,12 @@ This course is made up of three major components:
 
 ## Grade Breakdown
 
-| Component | % of Grade |
-| ------------------------- | ---------- |
-| Labs                      | 40         |
-| Programming Assignments   | 15         |
-| Homeworks                 | 15         |
-| Exams                     | 30         |
+| Component               | % of Grade |
+| ----------------------- | ---------- |
+| Labs                    | 40         |
+| Programming Assignments | 15         |
+| Homeworks               | 15         |
+| Exams                   | 30         |
 
 There are fourteen labs (one for each week), so each lab is worth 2.86% of your grade. There are eight homeworks, so each homework is worth 1.88% of your grade. There are two programming assignments, so each assignment is worth 7.5% of your grade.
 
@@ -46,9 +46,6 @@ Don't be late. For all homework and lab assignments, 20% of the grade will be su
 No source code should be shared between students. Students can work on assignments together, but no direct or indirect copying from another student is allowed. This class will use a code similarity checker to determine if students are copying code.
 
 ## Policies
-
-### COVID-19 Statement
-Students who feel sick, including exhibiting symptoms commonly associated with COVID 19 (fever; cough; shortness of breath/difficulty breathing; chills; muscle pain; sore throat; new loss of taste or smell; etc.) should not attend class and should work with their instructor to develop a study plan for the duration of the illness.
 
 ### Honor Code
 In keeping with the principles of the BYU Honor Code, students are expected to be honest in all of their academic work. Academic honesty means, most fundamentally, that any work you present as your own must in fact be your own work and not that of another. Violations of this principle may result in a failing grade in the course and additional disciplinary action by the university. Students are also expected to adhere to the Dress and Grooming Standards. Adherence demonstrates respect for yourself and others and ensures an effective learning and working environment. It is the university's expectation, and every instructor's expectation in class, that each student will abide by all Honor Code standards. Please call the Honor Code Office at 422-2847 if you have questions about those standards.
