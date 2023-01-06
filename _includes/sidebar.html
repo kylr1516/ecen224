@@ -41,7 +41,7 @@
         <div class="sidebar-heading">Programming Assignments</div>
         <div class="list-group list-group-flush">
             {% for item in site.programming-assignments %}
-            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action bg-light sidebar-item">
+            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action sidebar-item">
                 {% if item.icon %}
                 <i class="{{ item.icon }}"></i>
                 {% endif %}
