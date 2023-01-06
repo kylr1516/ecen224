@@ -1,9 +1,11 @@
 ---
 title: Command Line
 number: 2
-layout: under-construction
+layout: lab
 ---
 
+## GitHub Classroom
+Use the GitHub Classroom link posted in the Slack channel for the lab to accept the assignment.
 
 ## Overview
 
@@ -17,11 +19,9 @@ Put overview here
 
 Do we want to have requirements?
 
-## Submission
+## Lab Submission
+Answer the questions in the `README.md`
 
-How do we want them to submit their labs?
-
-
-## Resources
+## Explore More!
 
 

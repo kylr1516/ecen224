@@ -35,8 +35,9 @@ suggest_edits:
 
 # Set the color theme of the page
 colors:
-  text_color: "#111"
-  background_color: "#fdfdfd"
+  text_color: "#fff"
+  frame_color: "#333"
+  background_color: "#222"
   brand_color: "#60B3BE"
   secondary_color: "#52439B"
   text_selection_color: "#FEF081"

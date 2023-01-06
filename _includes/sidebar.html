@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-<div class="bg-light border-right" id="sidebar-wrapper">
+<div class="border-right" id="sidebar-wrapper">
     <div class="sidebar-sticky">
         <div class="sidebar-heading-big">
             <a href="{% link index.html %}"><img src={{ "/icon/icon.svg" | relative_url }}>
@@ -10,7 +10,7 @@
             {% for item in site.pages %}
             <!-- Look for specific front-matter tag -->
             {% if item.link %}
-            <a href="{{ item.link }}" class="list-group-item list-group-item-action bg-light sidebar-item" {% if
+            <a href="{{ item.link }}" class="list-group-item list-group-item-action sidebar-item" {% if
                 item.new_window %}target="_blank" {% endif %}>
                 {% if item.icon %}
                 <i class="{{ item.icon }}"></i>
@@ -18,7 +18,7 @@
                 {{ item.title }}
             </a>
             {% else %}
-            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action bg-light sidebar-item">
+            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action sidebar-item">
                 {% if item.icon %}
                 <i class="{{ item.icon }}"></i>
                 {% endif %}
@@ -31,7 +31,7 @@
         <div class="sidebar-heading">Labs</div>
         <div class="list-group list-group-flush">
             {% for item in site.labs %}
-            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action bg-light sidebar-item">
+            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action sidebar-item">
                 <span class="badge badge-pill badge-dark-grey">{{ item.number }}</span>
                 {{ item.title }}
             </a>
@@ -53,7 +53,7 @@
         <div class="sidebar-heading">Homeworks</div>
         <div class="list-group list-group-flush">
             {% for item in site.homework %}
-            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action bg-light sidebar-item">
+            <a href="{% link {{ item.path }} %}" class="list-group-item list-group-item-action sidebar-item">
                 {% if item.icon %}
                 <i class="{{ item.icon }}"></i>
                 {% endif %}

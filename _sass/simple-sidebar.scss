@@ -7,6 +7,10 @@ body {
   overflow-x: hidden;
 }
 
+.sticky-top {
+  background-color: $frame-color;
+}
+
 .sidebar-sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -16,6 +20,11 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   padding-bottom: 50px;
+  background-color: $frame-color;
+}
+
+.sidebar-sticky::-webkit-scrollbar {
+  display: none;
 }
 
 #sidebar-wrapper {
@@ -38,24 +47,31 @@ body {
 }
 
 .sidebar-heading-big a {
-  color: #111;
+  color: $text-color;
 }
 
 .sidebar-heading-big a:hover {
   text-decoration: none;
-  color: #111;
+  color: $text-color;
 }
 
 a.sidebar-item:focus,
 a.sidebar-item:hover {
   background-color: rgba($sidebar-hover-color, 0.7) !important;
+  color: $text-color;
+}
+
+.sidebar-item {
+  background-color: $frame-color;
+  color: $text-color;
 }
 
 #sidebar-wrapper .sidebar-heading {
   padding: 2rem 1.25rem 0.3rem 1.25rem;
   font-size: 1rem;
   text-transform: uppercase;
-  color: grey;
+  background-color: $frame-color;
+  color: $brand-color;
   font-family: omnium, sans-serif;
 }
 
