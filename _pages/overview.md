@@ -7,6 +7,20 @@ icon: fa-duotone fa-chalkboard-teacher
 
 ## Course Content
 
+Welcome to ECEn 224! We are excited to teach you all about computer systems. This class will provide you with the fundamental knowledge of how a computer works and will be your anchor for all future computing classes. This class is a sampling class. We will cover many different topics, but we will not dive too deep into any particular subject. The course will give you a taste of what each follow-on computing class offers. After taking this class, you will be familiar with the vocabulary, challenges, and exciting aspects of computer systems. You will be ready to take high-level computing classes.
+
+In terms of preparation for the class, we only assume that you have had one semester of programming (CS 111). If you know nothing else about computers, that is great! That's why you are here—to learn more about computers! The class will follow a bottom-up approach. We will start with one of the fundamental building blocks of computers: data. From data, we will learn how to manipulate and control data through programming by learning the C programming language. We will then learn how a computer takes a C program and translates it into something it can understand and executes that program. Finally, we will learn how computers get and output data to different systems.
+
+This class has three primary goals:
+
+1. Understand how a computer works.
+
+2. Become an excellent C programmer.
+
+3. Learn important *practical* computing skills.
+
+We have designed the lectures and labs to be engaging, practical, and (hopefully) fun. This class will not be easy, but it will be gratifying.
+
 ## Course Makeup
 
 This course is made up of six major components that all work together to help make you an expert in computer systems.
@@ -22,9 +36,6 @@ This course is made up of six major components that all work together to help ma
 - **Labs**. Labs are due every week on Thursdays. Labs are turned in through Github. For every lab, there is also a feedback component. This feedback gives you a chance to tell me what you liked and did not like about the lab so that I can improve the labs for future years. The purpose of the labs is to learn how to build something complex and apply what you have learned in lecture. Throughout the semester you will be building a smart doorbell system. This project will give you the confidence you need to build interesting projects in the future.
 
 - **Recitations**. Recitations are a chance for you to meet together as students with a TA and go over the content from the class. Initially, recitation will be focused on skills you will need to be a successful electrical and computer engineer, such as command line tools and debugging code. As the semester progresses, the recitations will shift to focus more on course content and help with labs and programming assignments. While recitations are optional, we highly recommend it.
-
-## Goals
-
 
 
 ## Grade Breakdown
