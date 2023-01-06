@@ -64,7 +64,7 @@ Once the writing process finishes, remove the SD card from the lab machine and i
 doorbell-<your_netid> login: _
 ```
 
-### Increase Swap File Size
+### Connect to Pi Z2W Remotely
 Now that your Pi Z2W has Raspberry Pi OS Lite installed and is connected to the lab network, we are able to connect to the it remotely using `ssh`. A remote connection means that you are able to log into a computer (like the Pi Z2W) _from_ a different computer (like the lab machines). Disconnect the HDMI cable and plug it back into the lab machine. 
 
 Make sure you are able to find your Pi Z2W by opening up the terminal on your lab machine. This can be done either through finding it in the **Applications Menu** or simply pressing `Ctrl+Alt+T`. Once the terminal has opened, search for it by entering the command:
@@ -98,6 +98,7 @@ A prompt will appear asking if you want to add the Pi Z2W to a list of trusted r
   <img src="{% link assets/getting-started/ssh.png %}" alt="ssh">
 </figure>
 
+### Increasing Swap File Size
 With a remote connection to the Pi Z2W, we can now finish our development environment setup. First let's give the Pi Z2W some more available RAM by increasing the size of its [swap file](https://itsfoss.com/create-swap-file-linux/). Doing this will give the Pi Z2W more system resources if it ever uses up all of its onboard RAM. First we can check to see how much RAM the Pi Z2W has available by typing in
 ```bash
 htop
@@ -154,6 +155,10 @@ The last we'll do in this lab to setup the Pi Z2W is to ensure that we can conne
 <figure class="image mx-auto" style="max-width: 750px">
   <img src="{% link assets/getting-started/vscode-icon.png %}" alt="vscode-icon">
 </figure>
+
+If this icon is not there, that means the **Remote - SSH** extension is not installed. To install it, click on the extensions ![extensions]({% link assets/getting-started/vscode-extensions.png %}){:width="4%"} icon on the leftmost toolbar. This will open up the **Extensions Manager** where you can search for any type of tool you wish to add to your VSCode editor. Type in `Remote - SSH` into the searchbar and click the **Install** button on the entry that says **Microsoft**  underneath. 
+
+Once the extension has successfully installed, you can now click on the green icon in the bottomleft corner as seen in the figure above.
 
 Click on this icon then select **Connect to Host > Add New SSH Host**. In this input box we will put the `ssh` command we used before to connect to the Pi Z2W through the terminal: `ssh <your_username>@doorbell-<your_netid>.local`. 
 
@@ -239,12 +244,10 @@ In future labs, any starter code or special resources for completing that lab wi
 - Understand how to setup a single board computer
 - Be able to gain access remotely to the Pi Z2W
 
-## Requirements
-
-- The hostname of your Pi Z2W _must_ be `doorbell-<your netid>`
-- Your swap space _must_ be 1024 MiB
-
 ## Lab Submission
 Answer the questions in the `README.md`. 
 
-## Resources
+## Explore More!
+- [Learn more about the terminal](https://kitras.io/linux/shells/)
+- [Customize the terminal](https://www.geeksforgeeks.org/how-to-customize-linux-terminal-using-powerline10k/)
+- [Ditch passwords for keys](https://dev.to/risafj/ssh-key-authentication-for-absolute-beginners-in-plain-english-2m3f)
