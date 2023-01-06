@@ -29,9 +29,9 @@ This course is made up of six major components that all work together to help ma
 
 - **Homework**. Homeworks are due one week after the unit's material is covered. They will cover information from the lecture and book. The homework will help apply the ideas you have learned from lecture and book and prepare yourself for the exams.
 
-- **Programming Assignments**. Some of the topics we learn about in this class require extra practice to truly become a master. This masterly will be accomplished through programming assignments. You will have two programming assignments where you will do a deep dive on one or two of the concepts you learned in class.
+- **Programming Assignments**. Some of the topics we learn about in this class require extra practice to truly become a master. This mastery will be accomplished through programming assignments. You will have two programming assignments where you will do a deep dive on one or two of the concepts you learned in class.
 
-- **Exams**. There are two midterms and a comprehensive final. No one likes exams, but they are essential to gage how well you have mastered the content and prove to yourself that you are an expert at computer systems.
+- **Exams**. There are two midterms and a comprehensive final. No one likes exams, but they are essential to gauge how well you have mastered the content and prove to yourself that you are an expert at computer systems.
 
 - **Labs**. Labs are due every week on Thursdays. Labs are turned in through Github. For every lab, there is also a feedback component. This feedback gives you a chance to tell me what you liked and did not like about the lab so that I can improve the labs for future years. The purpose of the labs is to learn how to build something complex and apply what you have learned in lecture. Throughout the semester you will be building a smart doorbell system. This project will give you the confidence you need to build interesting projects in the future.
 
