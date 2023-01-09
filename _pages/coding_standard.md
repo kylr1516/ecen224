@@ -10,7 +10,7 @@ We decided to keep the coding standard simple so you can worry less about the st
   
 2. You must use [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) to format your code with the following options: 
   ```
-  { BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, ColumnLimit: 100 }
+  { BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, ColumnLimit: 100, InsertBraces: true }
   ```
   We will show you how to use this in one of your labs. Set it up to run on save.
 
