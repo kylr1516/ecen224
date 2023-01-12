@@ -41,7 +41,7 @@ Change the following values in the menu according to the table below:
 
 | Setting | Value | Description |
 | ------------------------- | ---------- | ---------- |
-| Set hostname: | `doorbell-<your_netid>` | This will be the name of your Pi Z2W. This will make it easier to find on the network. |
+| Set hostname: | `doorbell-<your_netid>` | This will be the name of your Pi Z2W. This will make it easier to find on the network as it will have a unique name. |
 | Enable SSH:   | Select **Use password authentication** | This allows you to login into your Pi Z2W from anywhere on the network with the `ssh` tool by using a username and password. |
 | Set username and password: | Any username and password you desire (make sure it is secure). | We change these values from the default so that you can protect your projects. You are responsible for remembering this username and password! **Any loss of these credentials may require you to re-setup your Pi Z2W.** |
 | Set locate settings: | Timezone: **America/Denver**<br/>Keyboard Layout: **us** | This makes sure that the region the Pi Z2W is in the MDT timezone with the US keyboard layout. | 
@@ -58,7 +58,7 @@ Now that we have correctly configured the OS settings, we will write the OS to t
 
 Select the SD card and click **WRITE** to start writing the OS to the SD card. A pop-up window will ask you if you want to erase all contents on the SD card before continuing, select **YES** and continue with the write process. The writing process will take a while. 
 
-Once the writing process finishes, remove the SD card from the lab machine and insert it into the SD card slot of the Pi Z2W. Connect the mini HDMI cable adapter (connected to the HDMI out of your lab station's monitor), the USB-Ethernet adapter, and power cable to the corresponding ports (in that order or else the video for the device will not load correctly). If all worked correctly, you should see a splash screen on your monitor followed by a lot of scrolling text. You will know that your installation is successful if you see the following prompt on your screen:
+Once the writing process finishes, remove the SD card from the lab machine and insert it into the SD card slot of the Pi Z2W. Connect the mini HDMI cable adapter (connected to the HDMI out of your lab station's monitor), the USB-Ethernet adapter, and power cable to the corresponding ports ##designate which port to put it in## (in that order or else the video for the device will not load correctly). If all worked correctly, you should see a splash screen on your monitor followed by a lot of scrolling text. You will know that your installation is successful if you see the following prompt on your screen:
 
 ```
 doorbell-<your_netid> login: _
@@ -209,7 +209,7 @@ At the top of the page will be a big green button that says **New SSH key**. Cli
 Paste the contents that we copied into the **Key** box and feel free to add whatever value you desire into the **Title**. Make sure the dropdown menu for **Key type** is set to `Authentication Key`. Finally, click **Add SSH key** and now your Pi Z2W should be able to talk to your GitHub account.
 
 ### Setup GitHub Repository
-Next, we need to ensure that [`git`](https://git-scm.com/) is installed on our Pi Z2W. This will be the terminal program that we use to communicate with GitHub to version control and submit our assignments. If the terminal window on VSCode is not already open, press `` Ctrl+` `` and then enter in the command:
+Next, we need to ensure that [`git`](https://git-scm.com/) is installed on our Pi Z2W. This will be the terminal program that we use to communicate with GitHub to version control and submit our assignments. If the terminal window on VSCode is not already open, press `` Ctrl+` `` and then enter in the command and then enter y when prompted:
 
 ```bash
 sudo apt install git
