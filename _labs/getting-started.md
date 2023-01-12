@@ -209,7 +209,7 @@ At the top of the page will be a big green button that says **New SSH key**. Cli
 Paste the contents that we copied into the **Key** box and feel free to add whatever value you desire into the **Title**. Make sure the dropdown menu for **Key type** is set to `Authentication Key`. Finally, click **Add SSH key** and now your Pi Z2W should be able to talk to your GitHub account.
 
 ### Setup GitHub Repository
-Next, we need to ensure that [`git`](https://git-scm.com/) is installed on our Pi Z2W. This will be the terminal program that we use to communicate with GitHub to version control and submit our assignments. If the terminal window on VSCode is not already open, press `` Ctrl+` `` and then enter in the command:
+Next, we need to ensure that [`git`](https://git-scm.com/) is installed on our Pi Z2W. This will be the terminal program that we use to communicate with GitHub to version control and submit our assignments. If the terminal window on VSCode is not already open, press `` Ctrl+` `` and then enter in the command and then enter y when prompted:
 
 ```bash
 sudo apt install git
