@@ -169,7 +169,7 @@ Click on this icon then select **Connect to Host > Add New SSH Host**. In this i
 Then we save this entry to our local `ssh` configuration file on our lab machine:
 
 <figure class="image mx-auto" style="max-width: 750px">
-  <img src="{% link assets/getting-started/ssh-conf.png %}" alt="ssh-conf">
+  <img src="{% link assets/getting-started/ssh-conf.png %}" alt="ssh-conf"> ##this image is not representative of what comes up on the work machines as we have fsc/ rather than home/
 </figure>
 
 Once this is done you can click on the Remote SSH icon in the bottom-lefthand corner again and this time select the new `ssh` entry you just made by clicking **Connect to Host > doorbell-\<your\_netid\>.local**. 
